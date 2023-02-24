@@ -15,18 +15,9 @@ import (
 	"gocv.io/x/gocv"
 )
 
-// func updateTime(clock *fyne.Container, webcam *gocv.VideoCapture) {
-// 	imgen := gocv.NewMat()
-// 	webcam.Read(&imgen)
-// 	img2, _ := imgen.ToImage()
-// 	img := canvas.NewImageFromImage(img2)
-// 	img.FillMode = canvas.ImageFillOriginal
-// 	formatted := container.New(layout.NewMaxLayout(), img)
-// 	clock.Add(formatted)
-// }
 
 func main() {
-	webcam, _ := gocv.VideoCaptureFile("E:/go/myopencvgo/Basler_video.ogg")
+	webcam, _ := gocv.VideoCaptureFile("Basler_video.ogg")
 	a := app.New()
 	w := a.NewWindow("Background Image")
 	w.Resize(fyne.NewSize(400, 400))
