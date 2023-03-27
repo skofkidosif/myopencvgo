@@ -1,2 +1,2 @@
 # myopencvgo
-This program create window with two videos using gocv.VideoCaptureFile 
+myapp3.go This script create window with two videos using gocv.VideoCaptureFile 
